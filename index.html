@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .campos{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .campo{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 60px;
+            size: 70px;
+            width: 60px;
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: red;
+            border-width: 8px;
+            margin: 5px;
+        }
+        .div-vencedor{
+            width: 100%;
+            background-color: red;
+            margin-top: 100px;
+            border-style: solid;
+            border-color: black;
+            border-width: 10px 0px 10px 0px;
+
+        }
+
+        .vencedor{
+            font-size: 40px;
+            font-weight: bold;
+            width: 100%;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <audio id="audio-control" controls hidden>
+        <source id="audio" src="audio/som.mp3" type="audio/mpeg">
+      </audio>
+      
+
+    <center><h1>SORTEIO DA FELICIDADE</h1></center>
+    <center>
+        <div id="campos" class="campos">
+            <div id="casa-0" class="campo">0</div>
+            <div id="casa-1" class="campo">0</div>
+            <div id="casa-2" class="campo">0</div>
+            <div id="casa-3" class="campo">0</div>
+            <div id="casa-4" class="campo">0</div>
+            <div id="casa-5" class="campo">0</div>
+            <div id="casa-6" class="campo">0</div>
+            <div id="casa-7" class="campo">0</div>
+            <div id="casa-8" class="campo">0</div>
+            <div id="casa-9" class="campo">0</div>
+            <div id="casa-10" class="campo">0</div>
+        </div>
+    </center>
+
+<center>
+    <div class="div-vencedor">
+        <label id="vencedor" class="vencedor"></label>
+    </div>
+
+    <div>
+        <button onclick="sorteio()">Rodar</button>
+    </div>
+</center>
+
+
+    <script src="javascript/sorteio.js"></script>
+</body>
+</html>
